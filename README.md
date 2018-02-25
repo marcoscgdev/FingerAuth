@@ -1,3 +1,3 @@
 # FingerAuth
 Fingerprint authentication made easy.
-** Cooming soon... **
+**Cooming soon...**
