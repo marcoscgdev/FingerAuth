@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fingerauth_dialog_color_accent">#009688</color>
+    <color name="fingerauth_dialog_color_error">#F4511E</color>
+    <color name="fingerauth_dialog_color_icon">#FFFFFF</color>
+    <color name="fingerauth_dialog_color_hint">#42000000</color>
+    <color name="fingerauth_dialog_color_text_secondary">#8A000000</color>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fingerprint_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/fingerauth_dialog_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/fingerauth_dialog_description"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/fingerauth_dialog_color_text_secondary"/>
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/fingerauth_dialog_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fingerauth_dialog_description"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_fp_40px"
+        android:contentDescription="@string/fingerauth_dialog_icon_description"/>
+
+    <TextView
+        android:id="@+id/fingerauth_dialog_status"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fingerauth_dialog_icon"
+        android:layout_alignTop="@+id/fingerauth_dialog_icon"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toRightOf="@+id/fingerauth_dialog_icon"
+        android:layout_toEndOf="@+id/fingerauth_dialog_icon"
+        android:gravity="center_vertical"
+        android:text="@string/fingerauth_dialog_hint"
+        android:textColor="@color/fingerauth_dialog_color_hint" />
+</RelativeLayout>
