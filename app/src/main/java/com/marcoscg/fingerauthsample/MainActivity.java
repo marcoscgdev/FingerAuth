@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess() {
                         Toast.makeText(MainActivity.this, "onSuccess", Toast.LENGTH_SHORT).show();
-                        fingerAuthDialog.dismiss();
                     }
 
                     @Override
@@ -51,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onError() {
                         Toast.makeText(MainActivity.this, "onError", Toast.LENGTH_SHORT).show();
-                        fingerAuthDialog.dismiss();
                     }
                 });
         fingerAuthDialog.show();

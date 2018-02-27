@@ -48,7 +48,7 @@ public class FingerAuth {
                 if (failedCount == maxFailedCount) {
                     failedCount = 0;
                     if (onFingerAuthListener != null) {
-                        cancellationSignal.cancel();
+                        cancelSignal();
                         onFingerAuthListener.onError();
                     }
                 } else {
@@ -59,6 +59,7 @@ public class FingerAuth {
             @Override
             public void onAuthenticationSucceeded(FingerprintManagerCompat.AuthenticationResult result) {
                 if (onFingerAuthListener != null) {
+                    cancelSignal();
                     onFingerAuthListener.onSuccess();
                 }
             }

@@ -41,6 +41,13 @@ public class FingerAuthDialog {
                 dismiss();
             }
         });
+        builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialogInterface) {
+                if (fingerAuth!=null)
+                    fingerAuth.cancelSignal();
+            }
+        });
 
         View dialogView = activity.getLayoutInflater().inflate(R.layout.fingerauth_dialog_content, null);
         imageView = (AppCompatImageView) dialogView.findViewById(R.id.fingerauth_dialog_icon);
@@ -104,8 +111,6 @@ public class FingerAuthDialog {
     public void dismiss() {
         if (alertDialog!=null)
             alertDialog.dismiss();
-        if (fingerAuth!=null)
-            fingerAuth.cancelSignal();
     }
 
     private void init(final Context context) {
