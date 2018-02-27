@@ -12,6 +12,9 @@ You can see all the library releases [here](https://github.com/marcoscgdev/Finge
 ---
 
 ## Screenshots
-<kbd><img src="https://raw.githubusercontent.com/marcoscgdev/FingerAuth/master/screenshots/1.jpg" width="350"></kbd>&nbsp;&nbsp;&nbsp;&nbsp;<kbd><img src="https://raw.githubusercontent.com/marcoscgdev/FingerAuth/master/screenshots/2.jpg" width="350"></kbd>&nbsp;&nbsp;&nbsp;&nbsp;<kbd><img src="https://raw.githubusercontent.com/marcoscgdev/FingerAuth/master/screenshots/3.jpg" width="350"></kbd>
+
+||onSuccess|onFailure|
+|---|---|---|
+|<img src="https://raw.githubusercontent.com/marcoscgdev/FingerAuth/master/screenshots/1.jpg" width="350">|<img src="https://raw.githubusercontent.com/marcoscgdev/FingerAuth/master/screenshots/2.jpg" width="350">|<img src="https://raw.githubusercontent.com/marcoscgdev/FingerAuth/master/screenshots/3.jpg" width="350">|
 
 **Cooming soon...**
