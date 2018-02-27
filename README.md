@@ -42,6 +42,38 @@ Now add the dependency to your app build.gradle file:
 compile 'com.github.marcoscgdev:FingerAuth:1.0.0'
 ```
 
+### Creating a dialog
+
+Here is a complete snippet of it usage:
+
+```java
+new FingerAuthDialog(this)
+        .setTitle("Sign in")
+        .setCancelable(false)
+        .setPositiveButton("Use password", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                // do something
+            }
+        })
+        .setOnFingerAuthListener(new FingerAuth.OnFingerAuthListener() {
+            @Override
+            public void onSuccess() {
+                Toast.makeText(MainActivity.this, "onSuccess", Toast.LENGTH_SHORT).show();
+            }
+            
+            @Override
+            public void onFailure() {
+                Toast.makeText(MainActivity.this, "onFailure", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onError() {
+                Toast.makeText(MainActivity.this, "onError", Toast.LENGTH_SHORT).show();
+            }
+        });
+```
+
 ---
 >See the *sample project* to clarify any queries you may have.
 
