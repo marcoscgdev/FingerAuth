@@ -17,4 +17,51 @@ You can see all the library releases [here](https://github.com/marcoscgdev/Finge
 |:------:|:------:|:------:|
 |<img src="https://raw.githubusercontent.com/marcoscgdev/FingerAuth/master/screenshots/1.jpg" width="260">|<img src="https://raw.githubusercontent.com/marcoscgdev/FingerAuth/master/screenshots/2.jpg" width="260">|<img src="https://raw.githubusercontent.com/marcoscgdev/FingerAuth/master/screenshots/3.jpg" width="260">|
 
-**Cooming soon...**
+Download the sample apk [here](https://github.com/marcoscgdev/FingerAuth/releases/download/1.0.0/app-debug.apk).
+
+---
+
+## Usage:
+
+### Adding the depencency
+
+Add this to your root *build.gradle* file:
+
+```
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Now add the dependency to your app build.gradle file:
+
+```
+compile 'com.github.marcoscgdev:FingerAuth:1.0.0'
+```
+
+---
+>See the *sample project* to clarify any queries you may have.
+
+---
+
+## License
+
+```
+Copyright 2018 Marcos Calvo García
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
