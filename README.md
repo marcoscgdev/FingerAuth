@@ -115,7 +115,6 @@ new FingerAuth(this)
 <string name="fingerauth_dialog_hint">Touch sensor</string>
 <string name="fingerauth_dialog_not_recognized">Fingerprint not recognized. Try again</string>
 <string name="fingerauth_dialog_success">Fingerprint recognized</string>
-<string name="fingerauth_dialog_icon_description">Fingerprint icon</string>
 ```
 
 ---
