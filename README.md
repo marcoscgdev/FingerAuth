@@ -79,6 +79,7 @@ Show dialog only on devices that support fingerprint auth:
 
 ```java
 boolean hasFingerprintSupport = FingerAuth.hasFingerprintSupport(this);
+
 if (hasFingerprintSupport)
     fingerAuthDialog.show();
 ```
