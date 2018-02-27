@@ -71,7 +71,16 @@ new FingerAuthDialog(this)
             public void onError() {
                 Toast.makeText(MainActivity.this, "onError", Toast.LENGTH_SHORT).show();
             }
-        });
+        })
+        .show();
+```
+
+Show dialog only on devices that support fingerprint auth:
+
+```java
+boolean hasFingerprintSupport = FingerAuth.hasFingerprintSupport(this);
+if (hasFingerprintSupport)
+    fingerAuthDialog.show();
 ```
 
 ---
