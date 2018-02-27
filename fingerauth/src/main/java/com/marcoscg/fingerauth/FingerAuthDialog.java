@@ -27,6 +27,8 @@ public class FingerAuthDialog {
 
     private FingerAuth fingerAuth;
 
+    private int successDelay = 1000;
+
     static {
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
     }
@@ -83,6 +85,11 @@ public class FingerAuthDialog {
         return this;
     }
 
+    public FingerAuthDialog setSuccessDelay(int successDelayMillis) {
+        successDelay = successDelayMillis;
+        return this;
+    }
+
     public FingerAuthDialog setOnFingerAuthListener(FingerAuth.OnFingerAuthListener onFingerAuthListener) {
         this.onFingerAuthListener = onFingerAuthListener;
         return this;
@@ -115,6 +122,7 @@ public class FingerAuthDialog {
             @Override
             public void onError() {
                 onFingerAuthListener.onError();
+                dismiss();
             }
 
             @Override
@@ -126,8 +134,9 @@ public class FingerAuthDialog {
                     @Override
                     public void run() {
                         onFingerAuthListener.onSuccess();
+                        dismiss();
                     }
-                }, 1000);
+                }, successDelay);
             }
         });
     }
