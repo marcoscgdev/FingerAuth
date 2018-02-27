@@ -50,6 +50,7 @@ Here is a complete snippet of it usage:
 new FingerAuthDialog(this)
         .setTitle("Sign in")
         .setCancelable(false)
+        .setMaxFailedCount(3) // Number of attemps
         .setPositiveButton("Use password", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
@@ -82,6 +83,29 @@ boolean hasFingerprintSupport = FingerAuth.hasFingerprintSupport(this);
 
 if (hasFingerprintSupport)
     fingerAuthDialog.show();
+```
+
+### Implementing your own method
+
+```java
+new FingerAuth(this)
+        .setMaxFailedCount(3) // Number of attemps
+        .setOnFingerAuthListener(new FingerAuth.OnFingerAuthListener() {
+            @Override
+            public void onSuccess() {
+                // do something
+            }
+
+            @Override
+            public void onFailure() {
+                // do something
+            }
+
+            @Override
+            public void onError() {
+                // do something
+            }
+        });
 ```
 
 ---
