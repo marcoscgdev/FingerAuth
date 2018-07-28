@@ -5,7 +5,7 @@ Fingerprint authentication made easy.
 
 ## Releases:
 
-#### Current release: 1.0.0.
+#### Current release: 1.0.1.
 
 You can see all the library releases [here](https://github.com/marcoscgdev/FingerAuth/releases).
 
@@ -39,7 +39,7 @@ allprojects {
 Now add the dependency to your app build.gradle file:
 
 ```
-compile 'com.github.marcoscgdev:FingerAuth:1.0.0'
+compile 'com.github.marcoscgdev:FingerAuth:1.0.1'
 ```
 
 ### Creating a dialog
