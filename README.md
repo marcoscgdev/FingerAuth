@@ -39,7 +39,7 @@ allprojects {
 Now add the dependency to your app build.gradle file:
 
 ```
-compile 'com.github.marcoscgdev:FingerAuth:1.0.1'
+implementation 'com.github.marcoscgdev:FingerAuth:1.0.1'
 ```
 
 ### Creating a dialog
