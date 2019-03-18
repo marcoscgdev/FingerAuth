@@ -1,4 +1,4 @@
-# FingerAuth
+# [ARCHIVED] FingerAuth
 Fingerprint authentication made easy.
 
 ---
